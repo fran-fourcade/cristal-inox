@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería</title>
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/marketing.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+
+  <body class="uk-background-secondary">
+    <!-- TOP -->
+    <div class="top-wrap uk-position-relative uk-light uk-background-secondary">
+      <!-- NAV -->
+      <div
+        class="nav"
+        data-uk-sticky="cls-active: uk-background-secondary uk-box-shadow-medium; top: 100vh; animation: uk-animation-slide-top"
+      >
+        <div class="uk-container">
+          <nav
+            class="uk-navbar uk-navbar-container uk-navbar-transparent"
+            data-uk-navbar
+          >
+            <div class="uk-navbar-left">
+              <div class="uk-navbar-item uk-padding-remove-horizontal">
+                <a class="uk-logo" title="Logo" href="./index.html"
+                  ><img src="./img/glas/logo4.png" alt="Logo"
+                /></a>
+              </div>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav uk-visible@s">
+                <li class="uk-active uk-visible@m">
+                  <a href="./index.html" data-uk-icon="home"></a>
+                </li>
+                <li>
+                  <a href="#" data-uk-icon="chevron-down">Productos</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">Barandas</a></li>
+                      <li><a href="#">Mamparas</a></li>
+                      <li><a href="#">Herrajes</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./gallery.html">Galeria</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
+              <a
+                class="uk-navbar-toggle uk-navbar-item uk-hidden@s"
+                data-uk-toggle
+                data-uk-navbar-toggle-icon
+                href="#offcanvas-nav"
+              ></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- /NAV -->
+
+    <!-- TOP CONTAINER -->
+    <br />
+    <br />
+    <div
+      class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-large-top uk-light"
+      data-uk-parallax="y: 0,50; easing:0; opacity:0.2"
+    >
+      <div
+        class="uk-width-1-2@s"
+        data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150"
+      >
+        <h1>GALERÍA</h1>
+      </div>
+    </div>
+    <br />
+    <!-- /TOP CONTAINER -->
+
+    <div class="uk-container">
+      <div uk-filter="target: .filter" class="filter-main">
+        <ul class="uk-subnav uk-subnav-pill" uk-margin>
+          <li class="uk-active" uk-filter-control="group: tag">
+            <a href="#">TODO</a>
+          </li>
+          <li uk-filter-control="filter: [tag='baranda-escalera'];">
+            <a href="#">BARANDA DE ESCALERA</a>
+          </li>
+          <li uk-filter-control="filter: [tag='cerco-pileta'];">
+            <a href="#">CERCO DE PILETA</a>
+          </li>
+        </ul>
+
+        <ul
+          class="filter uk-child-width-1-3@m uk-text-center uk-light uk-animation-toggle"
+          uk-grid="masonry: true; parallax: 150"  uk-lightbox="animation: slide"
+        >
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda1">
+            <a class="uk-inline" href="./img/glas/escalera1.jpg" data-caption="Caption 1">
+              <img src="./img/glas/escalera1.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda2">
+            <a class="uk-inline" href="./img/glas/escalera2.jpg" data-caption="Caption 2">
+              <img src="./img/glas/escalera2.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda3">
+            <a class="uk-inline" href="./img/glas/escalera3.jpg" data-caption="Caption 3">
+              <img src="./img/glas/escalera3.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta1">
+            <a class="uk-inline" href="./img/cerco1.jpg" data-caption="Caption 1">
+              <img src="./img/cerco1.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta2">
+            <a class="uk-inline" href="./img/cerco2.jpg" data-caption="Caption 1">
+              <img src="./img/cerco2.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda4">
+            <a class="uk-inline" href="./img/baranda.jpg" data-caption="Caption 1">
+              <img src="./img/baranda.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta3">
+            <a class="uk-inline" href="./img/cerco3.jpg" data-caption="Caption 1">
+              <img src="./img/cerco3.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda5">
+            <a class="uk-inline" href="./img/baranda1.jpg" data-caption="Caption 1">
+              <img src="./img/baranda1.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta4">
+            <a class="uk-inline" href="./img/cerco4.jpg" data-caption="Caption 1">
+              <img src="./img/cerco4.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta5">
+            <a class="uk-inline" href="./img/cerco5.jpg" data-caption="Caption 1">
+              <img src="./img/cerco5.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda6">
+            <a class="uk-inline" href="./img/baranda2.jpg" data-caption="Caption 1">
+              <img src="./img/baranda2.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda7">
+            <a class="uk-inline" href="./img/baranda3.jpg" data-caption="Caption 1">
+              <img src="./img/baranda3.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta6">
+            <a class="uk-inline" href="./img/cerco6.jpg" data-caption="Caption 1">
+              <img src="./img/cerco6.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta7">
+            <a class="uk-inline" href="./img/cerco7.jpg" data-caption="Caption 1">
+              <img src="./img/cerco7.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda8">
+            <a class="uk-inline" href="./img/baranda4.jpg" data-caption="Caption 1">
+              <img src="./img/baranda4.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta8">
+            <a class="uk-inline" href="./img/cerco8.jpg" data-caption="Caption 1">
+              <img src="./img/cerco8.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta9">
+            <a class="uk-inline" href="./img/cerco9.jpg" data-caption="Caption 1">
+              <img src="./img/cerco9.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta10">
+            <a class="uk-inline" href="./img/cerco10.jpg" data-caption="Caption 1">
+              <img src="./img/cerco10.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta11">
+            <a class="uk-inline" href="./img/cerco11.jpg" data-caption="Caption 1">
+              <img src="./img/cerco11.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda9">
+            <a class="uk-inline" href="./img/baranda5.jpg" data-caption="Caption 1">
+              <img src="./img/baranda5.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda10">
+            <a class="uk-inline" href="./img/baranda6.jpg" data-caption="Caption 1">
+              <img src="./img/baranda6.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda11">
+            <a class="uk-inline" href="./img/baranda7.jpg" data-caption="Caption 1">
+              <img src="./img/baranda7.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta12">
+            <a class="uk-inline" href="./img/cerco12.jpg" data-caption="Caption 1">
+              <img src="./img/cerco12.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="cerco-pileta" data-name="cerco-pileta13">
+            <a class="uk-inline" href="./img/cerco13.jpg" data-caption="Caption 1">
+              <img src="./img/cerco13.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda12">
+            <a class="uk-inline" href="./img/baranda8.jpg" data-caption="Caption 1">
+              <img src="./img/baranda8.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda13">
+            <a class="uk-inline" href="./img/glas/baranda oscura 2.jpg" data-caption="Caption 1">
+              <img src="./img/glas/baranda oscura 2.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda13">
+            <a class="uk-inline" href="./img/glas/baranda oscura balcon.jpg" data-caption="Caption 1">
+              <img src="./img/glas/baranda oscura balcon.jpg" alt="">
+            </a>
+          </li>
+          <li class="skills-el" tag="baranda-escalera" data-name="baranda13">
+            <a class="uk-inline" href="./img/glas/mini_poste_5.jpg" data-caption="Caption 1">
+              <img src="./img/glas/mini_poste_5.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="uk-section uk-section-secondary uk-padding-remove-bottom">
+      <div class="uk-container">
+        <div class="uk-grid uk-grid-large" data-uk-grid>
+          <div class="uk-width-1-2@m">
+            <h5>InoGlass</h5>
+            <p>
+              Nuestro objetivo es su satisfacción. contacto:
+              <a href="#" title="">inoglass@gmail.com</a>
+            </p>
+            <div>
+              <a href="" class="uk-icon-button" data-uk-icon="facebook"></a>
+              <a href="" class="uk-icon-button" data-uk-icon="instagram"></a>
+            </div>
+          </div>
+          <div class="uk-width-1-6@m">
+            <h5>PRODUCTOS</h5>
+            <ul class="uk-list">
+              <li>Barandas</li>
+              <li>Mamparas</li>
+              <li>Herrajes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-text-center uk-padding uk-padding-remove-horizontal">
+        <span class="uk-text-small uk-text-muted"
+          >© 2020 Francisco Fourcade -
+        </span>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+
+    <!-- OFFCANVAS -->
+    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
+      <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+        <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+          <li class="uk-parent">
+          <li class="uk-nav-header"><a href="#">INICIO</a></li>
+          <li class="uk-nav-header"><a href="#">PRODUCTOS</a></li>
+          <ul class="uk-nav-sub">
+            <li><a href="#">Barandas</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Mamparas</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Herrajes</a></li>
+            <li class="uk-nav-divider"></li>
+          </ul>
+          </li>
+          <li class="uk-nav-header"><a href="./gallery.html">GALERIA</a></li>
+        </ul>
+        <h3>CONTACTAR</h3>
+        <p>
+          <span class="uk-margin-small-right uk-icon" data-uk-icon="icon: whatsapp"></span>
+          3585064360
+        </p>
+        <p>
+          <span class="uk-margin-small-right uk-icon" data-uk-icon="icon: mail"></span>
+          cristalinox@gmail.com
+        </p>
+      </div>
+    </div>
+    <!-- /OFFCANVAS -->
+
+    <!-- JS FILES -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/uikit.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
+  </body>
+</html>

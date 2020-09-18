@@ -1,0 +1,19 @@
+.borde1 {
+  border: 1px red solid;
+}
+
+.borde2 {
+  border: 1px green solid;
+}
+
+.borde3 {
+  border: 1px yellow solid;
+}
+
+.borde4 {
+  border: 1px cyan solid;
+}
+
+.borde5 {
+  border: 2px solid blue;
+}
