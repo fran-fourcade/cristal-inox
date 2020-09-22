@@ -1,2 +1,2 @@
-# cristal-inox
- Cristal.Inox Company website
+# InoGlass 
+InoGlass Company website
