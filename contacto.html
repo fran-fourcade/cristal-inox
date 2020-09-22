@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería</title>
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/marketing.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/f7fe0cc5ec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="uk-background-secondary">
+    <div class="top-wrap uk-position-relative uk-light uk-background-secondary">
+      <!-- NAV -->
+      <div
+        class="nav"
+        data-uk-sticky="cls-active: uk-background-secondary uk-box-shadow-medium; top: 100vh; animation: uk-animation-slide-top"
+      >
+        <div class="uk-container">
+          <nav
+            class="uk-navbar uk-navbar-container uk-navbar-transparent"
+            data-uk-navbar
+          >
+            <div class="uk-navbar-left">
+              <div class="uk-navbar-item uk-padding-remove-horizontal">
+                <a class="uk-logo" title="Logo" href="./index.html"
+                  ><img src="./img/glas/logo4.png" alt="Logo"
+                /></a>
+              </div>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav uk-visible@s">
+                <li class="uk-active uk-visible@m">
+                  <a href="./index.html" data-uk-icon="home"></a>
+                </li>
+                <li>
+                  <a href="#" data-uk-icon="chevron-down">Productos</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">Barandas</a></li>
+                      <li><a href="#">Mamparas</a></li>
+                      <li><a href="#">Herrajes</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
+              <a
+                class="uk-navbar-toggle uk-navbar-item uk-hidden@s"
+                data-uk-toggle
+                data-uk-navbar-toggle-icon
+                href="#offcanvas-nav"
+              ></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- /NAV -->
+
+    <!-- TOP CONTAINER -->
+    <br />
+    <br />
+    <div
+      class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-large-top uk-light"
+      data-uk-parallax="y: 0,50; easing:0; opacity:0.2"
+    >
+      <div
+        class="uk-width-1-2@s"
+        data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150"
+      >
+        <h1>CONTACTO</h1>
+      </div>
+    </div>
+    <br />
+    <!-- /TOP CONTAINER -->
+
+    <div class="uk-container uk-light">
+      <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-2-3@m">
+          <form>
+            <fieldset class="uk-fieldset">
+              <legend class="uk-legend">Hacenos tu consulta</legend>
+
+              <div class="uk-margin">
+                <label class="uk-form-label" for="Nombre">Tu Nombre</label>
+                <input
+                  class="uk-input"
+                  type="text"
+                  placeholder="Ingresa tu nombre"
+                  id="Nombre"
+                  required
+                />
+              </div>
+
+              <div class="uk-margin">
+                <label class="uk-form-label" for="Email">Tu Email</label>
+                <input
+                  class="uk-input"
+                  type="email"
+                  placeholder="Ingresa tu email"
+                  id="Email"
+                />
+              </div>
+
+              <div class="uk-margin">
+                <label class="uk-form-label" for="Mensaje">Tu mensaje</label>
+                <textarea
+                  class="uk-textarea"
+                  rows="5"
+                  placeholder=""
+                ></textarea>
+              </div>
+
+              <div class="uk-margin">
+                <input
+                  type="submit"
+                  value="Enviar"
+                  class="uk-button uk-button-primary uk-width-1-1"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="uk-width-1-3@m">
+          <h3 class="uk-panel-title">Datos de contacto</h3>
+          <p>
+            <strong>InoGlass</strong>
+            <br />Río Cuarto, Córdoba<br />5800
+          </p>
+          <p>
+            <a>inoglassr4@gmail.com</a>
+            <br /><a>@inoglass</a><br />
+            358 5064360
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFCANVAS -->
+    <div
+      id="offcanvas-nav"
+      data-uk-offcanvas="flip: true; overlay: true; mode: slide;"
+    >
+      <div
+        class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide uk-flex uk-flex-column"
+      >
+        <button
+          class="uk-offcanvas-close uk-close uk-icon"
+          type="button"
+          data-uk-close
+        ></button>
+        <ul
+          class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon"
+          uk-nav
+        >
+          <li class="uk-nav-header"><a href="#">INICIO</a></li>
+          <li class="uk-nav-header uk-parent">
+            <a href="#">PRODUCTOS</a>
+            <ul class="uk-nav-sub">
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">Barandas</a></li>
+              <li><a href="#">Mamparas</a></li>
+              <li><a href="#">Herrajes</a></li>
+              <li class="uk-nav-divider"></li>
+            </ul>
+          </li>
+          <li class="uk-nav-header"><a href="./galeria.html">GALERIA</a></li>
+        </ul>
+
+        <div class="uk-flex uk-flex-column">
+          <div class="uk-margin-xlarge-top">
+            <hr class="uk-text-center uk-divider-small uk-margin-small" />
+            <h3 class="uk-text-center uk-margin-small">CONTACTAR</h3>
+            <h5 class="uk-text-center uk-margin-small">
+              <span
+                class="uk-margin-small-right uk-icon"
+                data-uk-icon="icon: whatsapp"
+              ></span>
+              3585064360
+            </h5>
+            <h5 class="uk-text-center uk-margin-small">
+              <span
+                class="uk-margin-small-right uk-icon"
+                data-uk-icon="icon: mail"
+              ></span>
+              inoglass@gmail.com
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /OFFCANVAS -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/uikit.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
+  </body>
+</html>
