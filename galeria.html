@@ -36,7 +36,11 @@
           >
             <div class="uk-navbar-left">
               <div class="uk-navbar-item uk-padding-remove-horizontal">
-                <a class="uk-logo" title="Logo" href="./index.html" id="logo"
+                <a
+                  class="uk-logo uk-animation-fade"
+                  title="Logo"
+                  href="./index.html"
+                  id="logo"
                   ><img src="./img/logos/inoglass blanco.png" alt="Logo"
                 /></a>
               </div>
@@ -56,8 +60,8 @@
                     </ul>
                   </div>
                 </li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
               </ul>
               <a
                 class="uk-navbar-toggle uk-navbar-item uk-hidden@s"
@@ -76,7 +80,7 @@
     <br />
     <br />
     <div
-      class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-large-top uk-light"
+      class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-xlarge-top uk-light"
       data-uk-parallax="y: 0,50; easing:0; opacity:0.2"
     >
       <div
@@ -93,13 +97,15 @@
       <div uk-filter="target: .filter" class="filter-main">
         <ul class="uk-subnav uk-subnav-pill">
           <li class="uk-active" uk-filter-control="group: tag">
-            <a href="#" id="todo">TODO</a>
+            <a href="#" id="todo" style="border-radius: 100px">TODO</a>
           </li>
           <li uk-filter-control="filter: [tag='baranda-escalera'];">
-            <a href="#" id="escaleras">ESCALERAS</a>
+            <a href="#" id="escaleras" style="border-radius: 100px"
+              >ESCALERAS</a
+            >
           </li>
           <li uk-filter-control="filter: [tag='cerco-pileta'];">
-            <a href="#" id="piletas">PILETAS</a>
+            <a href="#" id="piletas" style="border-radius: 100px">PILETAS</a>
           </li>
         </ul>
 
@@ -598,42 +604,23 @@
           data-uk-close
         ></button>
         <ul
-          class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon"
+          class="uk-nav uk-nav-primary uk-text-right uk-margin-auto-vertical"
           uk-nav
         >
           <li class="uk-nav-header"><a href="./index.html">INICIO</a></li>
           <li class="uk-nav-header uk-parent">
             <a href="#">PRODUCTOS</a>
             <ul class="uk-nav-sub">
-              <li class="uk-nav-divider"></li>
+              <li class="uk-divider-small uk-margin-remove-bottom"></li>
               <li><a href="#">Barandas</a></li>
               <li><a href="#">Mamparas</a></li>
               <li><a href="#">Herrajes</a></li>
-              <li class="uk-nav-divider"></li>
+              <li class="uk-divider-small uk-margin-remove"></li>
             </ul>
           </li>
           <li class="uk-nav-header"><a href="./galeria.html">GALERIA</a></li>
+          <li class="uk-nav-header"><a href="./contacto.html">CONTACTO</a></li>
         </ul>
-
-        <div class="uk-flex uk-flex-column">
-          <div class="uk-margin-xlarge-top">
-            <hr class="uk-text-center uk-divider-small uk-margin-small" />
-            <h3 class="uk-text-center uk-margin-small">CONTACTO</h3>
-            <h5 class="uk-text-center uk-margin-small">
-              <a
-                href="https://wa.me/5493585064360?text=Hola!%20Quiero%20hacer%20una%20consulta!"
-                target="_blank"
-                ><span class="fab fa-whatsapp"></span> 358 5064360</a
-              >
-            </h5>
-            <h5 class="uk-text-center uk-margin-small">
-              <a href="mailto:">
-                <span class="far fa-envelope"></span>
-                inoglassr4@gmail.com</a
-              >
-            </h5>
-          </div>
-        </div>
       </div>
     </div>
 

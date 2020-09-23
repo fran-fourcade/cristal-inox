@@ -32,7 +32,10 @@
           >
             <div class="uk-navbar-left">
               <div class="uk-navbar-item uk-padding-remove-horizontal">
-                <a class="uk-logo" title="Logo" href="./index.html"
+                <a
+                  class="uk-logo uk-animation-fade"
+                  title="Logo"
+                  href="./index.html"
                   ><img src="./img/logos/inoglass color.png" alt="Logo"
                 /></a>
               </div>
@@ -53,7 +56,7 @@
                   </div>
                 </li>
                 <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#w">Contacto</a></li>
               </ul>
               <a
                 class="uk-navbar-toggle uk-navbar-item uk-hidden@s"
@@ -126,7 +129,12 @@
                 <input
                   type="submit"
                   value="Enviar"
-                  class="uk-button uk-button-primary uk-width-1-1"
+                  class="uk-button uk-width-1-1"
+                  style="
+                    border: 2px solid #71c8f0;
+                    background-color: #222;
+                    border-radius: 100px;
+                  "
                 />
               </div>
             </fieldset>
@@ -168,42 +176,23 @@
           data-uk-close
         ></button>
         <ul
-          class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon"
+          class="uk-nav uk-nav-primary uk-text-right uk-margin-auto-vertical"
           uk-nav
         >
           <li class="uk-nav-header"><a href="./index.html">INICIO</a></li>
           <li class="uk-nav-header uk-parent">
             <a href="#">PRODUCTOS</a>
             <ul class="uk-nav-sub">
-              <li class="uk-nav-divider"></li>
+              <li class="uk-divider-small uk-margin-remove-bottom"></li>
               <li><a href="#">Barandas</a></li>
               <li><a href="#">Mamparas</a></li>
               <li><a href="#">Herrajes</a></li>
-              <li class="uk-nav-divider"></li>
+              <li class="uk-divider-small uk-margin-remove"></li>
             </ul>
           </li>
           <li class="uk-nav-header"><a href="./galeria.html">GALERIA</a></li>
+          <li class="uk-nav-header"><a href="./contacto.html">CONTACTO</a></li>
         </ul>
-
-        <div class="uk-flex uk-flex-column">
-          <div class="uk-margin-xlarge-top">
-            <hr class="uk-text-center uk-divider-small uk-margin-small" />
-            <h3 class="uk-text-center uk-margin-small">CONTACTO</h3>
-            <h5 class="uk-text-center uk-margin-small">
-              <a
-                href="https://wa.me/5493585064360?text=Hola!%20Quiero%20hacer%20una%20consulta!"
-                target="_blank"
-                ><span class="fab fa-whatsapp"></span> 358 5064360</a
-              >
-            </h5>
-            <h5 class="uk-text-center uk-margin-small">
-              <a href="mailto:">
-                <span class="far fa-envelope"></span>
-                inoglassr4@gmail.com</a
-              >
-            </h5>
-          </div>
-        </div>
       </div>
     </div>
 

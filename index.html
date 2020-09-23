@@ -33,7 +33,11 @@
           >
             <div class="uk-navbar-left">
               <div class="uk-navbar-item uk-padding-remove-horizontal">
-                <a class="uk-logo" title="Logo" href="./index.html" id="logo"
+                <a
+                  class="uk-logo uk-animation-fade"
+                  title="Logo"
+                  href="./index.html"
+                  id="logo"
                   ><img src="./img/logos/inoglass blanco.png" alt="Logo"
                 /></a>
               </div>
@@ -80,19 +84,29 @@
             class="uk-width-1-2@s"
             data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150"
           >
-            <h6 class="uk-text-primary uk-margin-small-bottom">
+            <h6
+              class="uk-text-primary uk-margin-small-bottom uk-text-center uk-text-left@s"
+            >
               Al alcance de tus manos
             </h6>
-            <h1 class="uk-margin-remove-top">Anticipate al verano</h1>
+            <h1 class="uk-margin-remove-top uk-text-center uk-text-left@s">
+              Anticipate al verano
+            </h1>
             <p class="subtitle-text uk-visible@s">
               Barandas de vidrio templado laminado y acero para tu pileta.
               Seguridad y estilo.
             </p>
             <a
-              href="#"
-              title="Learn More"
-              class="uk-button uk-button-primary uk-border-pill"
+              href="./contacto.html"
+              title="Consultar"
+              class="uk-button uk-button- uk-button-primary uk-border-pill uk-align-center uk-align-left@s"
               data-uk-scrollspy-class="uk-animation-fade"
+              style="
+                max-width: 150px;
+                border: 2px solid #71c8f0;
+                background-color: #2228;
+                color: aliceblue;
+              "
               >Consultar</a
             >
           </div>
@@ -123,15 +137,21 @@
     <!-- /TOP -->
     <section id="content" class="uk-section uk-section-default">
       <div class="uk-container">
-        <h5 class="uk-text-center">HERRAJES</h5>
+        <h3 class="uk-text-center">HERRAJES</h3>
         <div class="uk-section uk-section-small uk-padding-remove-top">
           <ul
             class="uk-subnav uk-subnav-pill uk-flex uk-flex-center"
             data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade"
           >
-            <li><a class="uk-border-pill" href="#">Mini Poste</a></li>
-            <li><a class="uk-border-pill" href="#">Columnas</a></li>
-            <li><a class="uk-border-pill" href="#">Accesorios</a></li>
+            <li class="uk-margin-top">
+              <a class="uk-border-pill" href="#">Mini Poste</a>
+            </li>
+            <li class="uk-margin-top">
+              <a class="uk-border-pill" href="#">Columnas</a>
+            </li>
+            <li class="uk-margin-top">
+              <a class="uk-border-pill" href="#">Accesorios</a>
+            </li>
           </ul>
         </div>
 
@@ -265,11 +285,20 @@
           <div>
             <h6>TRABAJOS A MEDIDA</h6>
             <h2 class="uk-margin-small-top uk-h1">Atención personalizada</h2>
-            <p class="subtitle-text">
+            <p class="subtitle-text uk-text-justify@s">
               Dedicamos el tiempo necesario para desarrollar tu proyecto y
               aseguramos tu satisfacción con el trabajo terminado.
             </p>
-            <a href="#" class="uk-button uk-button-primary uk-border-pill"
+            <a
+              href="https://wa.me/5493585064360?text=Hola!%20Quiero%20hacer%20una%20consulta!"
+              target="_blank"
+              class="uk-button uk-button-primary uk-border-pill"
+              style="
+                border: 2px solid #71c8f0;
+                background-color: #222;
+                color: #fff;
+                border-radius: 100px;
+              "
               ><span
                 class="uk-margin-small-right uk-icon"
                 data-uk-icon="icon: whatsapp"
@@ -511,42 +540,23 @@
           data-uk-close
         ></button>
         <ul
-          class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon"
+          class="uk-nav uk-nav-primary uk-text-right uk-margin-auto-vertical"
           uk-nav
         >
           <li class="uk-nav-header"><a href="./index.html">INICIO</a></li>
           <li class="uk-nav-header uk-parent">
             <a href="#">PRODUCTOS</a>
             <ul class="uk-nav-sub">
-              <li class="uk-nav-divider"></li>
+              <li class="uk-divider-small uk-margin-remove-bottom"></li>
               <li><a href="#">Barandas</a></li>
               <li><a href="#">Mamparas</a></li>
               <li><a href="#">Herrajes</a></li>
-              <li class="uk-nav-divider"></li>
+              <li class="uk-divider-small uk-margin-remove"></li>
             </ul>
           </li>
           <li class="uk-nav-header"><a href="./galeria.html">GALERIA</a></li>
+          <li class="uk-nav-header"><a href="./contacto.html">CONTACTO</a></li>
         </ul>
-
-        <div class="uk-flex uk-flex-column">
-          <div class="uk-margin-xlarge-top">
-            <hr class="uk-text-center uk-divider-small uk-margin-small" />
-            <h3 class="uk-text-center uk-margin-small">CONTACTO</h3>
-            <h5 class="uk-text-center uk-margin-small">
-              <a
-                href="https://wa.me/5493585064360?text=Hola!%20Quiero%20hacer%20una%20consulta!"
-                target="_blank"
-                ><span class="fab fa-whatsapp"></span> 358 5064360</a
-              >
-            </h5>
-            <h5 class="uk-text-center uk-margin-small">
-              <a href="mailto:">
-                <span class="far fa-envelope"></span>
-                inoglassr4@gmail.com</a
-              >
-            </h5>
-          </div>
-        </div>
       </div>
     </div>
 
