@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galería</title>
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/logos/favicon.png" />
 
     <!-- CSS FILES -->
     <link rel="stylesheet" type="text/css" href="./css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/marketing.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
+
+    <!-- ICONS FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/f7fe0cc5ec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/fix-animation.js"></script>
   </head>
 
   <body class="uk-background-secondary">
@@ -27,8 +36,8 @@
           >
             <div class="uk-navbar-left">
               <div class="uk-navbar-item uk-padding-remove-horizontal">
-                <a class="uk-logo" title="Logo" href="./index.html"
-                  ><img src="./img/glas/logo4.png" alt="Logo"
+                <a class="uk-logo" title="Logo" href="./index.html" id="logo"
+                  ><img src="./img/logos/inoglass blanco.png" alt="Logo"
                 /></a>
               </div>
             </div>
@@ -84,13 +93,13 @@
       <div uk-filter="target: .filter" class="filter-main">
         <ul class="uk-subnav uk-subnav-pill">
           <li class="uk-active" uk-filter-control="group: tag">
-            <a href="#">TODO</a>
+            <a href="#" id="todo">TODO</a>
           </li>
           <li uk-filter-control="filter: [tag='baranda-escalera'];">
-            <a href="#">ESCALERAS</a>
+            <a href="#" id="escaleras">ESCALERAS</a>
           </li>
           <li uk-filter-control="filter: [tag='cerco-pileta'];">
-            <a href="#">PILETAS</a>
+            <a href="#" id="piletas">PILETAS</a>
           </li>
         </ul>
 
@@ -101,7 +110,7 @@
           uk-lightbox="animation: slide"
         >
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda1"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -115,7 +124,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda2"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -129,7 +138,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda3"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -143,7 +152,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta1"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -157,7 +166,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta2"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -171,7 +180,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda4"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -185,7 +194,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta3"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -199,7 +208,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda5"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -213,7 +222,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta4"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -227,7 +236,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta5"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -241,7 +250,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda6"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -255,7 +264,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda7"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -269,7 +278,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta6"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -283,7 +292,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta7"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -297,7 +306,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda8"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -311,7 +320,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta8"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -325,7 +334,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta9"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -339,7 +348,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta10"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -353,7 +362,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta11"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -367,7 +376,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda9"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -381,7 +390,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda10"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -395,7 +404,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda11"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -409,7 +418,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta12"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -423,7 +432,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="cerco-pileta"
             data-name="cerco-pileta13"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -437,7 +446,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda12"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -451,7 +460,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda13"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -465,7 +474,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda13"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -479,7 +488,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda13"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -493,7 +502,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda13"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -507,7 +516,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda13"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -521,7 +530,7 @@
             </a>
           </li>
           <li
-            class="skills-el"
+            class="imagen"
             tag="baranda-escalera"
             data-name="baranda13"
             uk-scrollspy="cls: uk-animation-fade; repeat: true"
@@ -541,12 +550,15 @@
     <!-- FOOTER -->
     <footer class="uk-section uk-section-secondary uk-padding-remove-bottom">
       <div class="uk-container">
+        <hr class="uk-divider-small uk-margin-large-bottom uk-text-center" />
         <div class="uk-grid uk-grid-large" data-uk-grid>
           <div class="uk-width-1-2@m">
-            <h5>InoGlass</h5>
+            <a class="uk-logo" title="Logo" href="./index.html"
+              ><img src="./img/logos/inoglass blanco.png" alt="Logo"
+            /></a>
             <p>
               Nuestro objetivo es su satisfacción. contacto:
-              <a href="#" title="">inoglass@gmail.com</a>
+              <a href="#" title="">inoglassr4@gmail.com</a>
             </p>
             <div>
               <a href="" class="uk-icon-button" data-uk-icon="facebook"></a>
@@ -589,7 +601,7 @@
           class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon"
           uk-nav
         >
-          <li class="uk-nav-header"><a href="#">INICIO</a></li>
+          <li class="uk-nav-header"><a href="./index.html">INICIO</a></li>
           <li class="uk-nav-header uk-parent">
             <a href="#">PRODUCTOS</a>
             <ul class="uk-nav-sub">
@@ -606,20 +618,19 @@
         <div class="uk-flex uk-flex-column">
           <div class="uk-margin-xlarge-top">
             <hr class="uk-text-center uk-divider-small uk-margin-small" />
-            <h3 class="uk-text-center uk-margin-small">CONTACTAR</h3>
+            <h3 class="uk-text-center uk-margin-small">CONTACTO</h3>
             <h5 class="uk-text-center uk-margin-small">
-              <span
-                class="uk-margin-small-right uk-icon"
-                data-uk-icon="icon: whatsapp"
-              ></span>
-              3585064360
+              <a
+                href="https://wa.me/5493585064360?text=Hola!%20Quiero%20hacer%20una%20consulta!"
+                target="_blank"
+                ><span class="fab fa-whatsapp"></span> 358 5064360</a
+              >
             </h5>
             <h5 class="uk-text-center uk-margin-small">
-              <span
-                class="uk-margin-small-right uk-icon"
-                data-uk-icon="icon: mail"
-              ></span>
-              inoglass@gmail.com
+              <a href="mailto:">
+                <span class="far fa-envelope"></span>
+                inoglassr4@gmail.com</a
+              >
             </h5>
           </div>
         </div>
@@ -629,8 +640,9 @@
     <!-- /OFFCANVAS -->
 
     <!-- JS FILES -->
-    <script src="./js/jquery-3.5.1.min.js"></script>
+
     <script src="./js/uikit.min.js"></script>
     <script src="./js/uikit-icons.min.js"></script>
+    <script src="./js/logo.js"></script>
   </body>
 </html>
