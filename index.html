@@ -10,12 +10,19 @@
     <link rel="stylesheet" type="text/css" href="./css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/marketing.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/floating-wpp.css" />
 
     <!-- ICONS FONTAWESOME -->
     <script
       src="https://kit.fontawesome.com/f7fe0cc5ec.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- jQUERY -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <!-- BOTON FLOTANTE WHATSAPP -->
+    <script type="text/javascript" src="./js/floating-wpp.js"></script>
   </head>
 
   <body>
@@ -562,10 +569,32 @@
 
     <!-- /OFFCANVAS -->
 
+    <!-- BOTON WHATSAPP FLOTANTE -->
+    <div id="wap"></div>
+    <!-- /BOTON WHATSAPP FLOTANTE -->
+
     <!-- JS FILES -->
+    <script type="text/javascript">
+      $(function () {
+        $("#wap").floatingWhatsApp({
+          phone: "5493585064360",
+          popupMessage: "Hola! Cómo podemos ayudarte?",
+          message: "Quiero hacer una consulta: ",
+          position: "right",
+          showPopup: true,
+          showOnIE: false,
+          headerTitle: "Chat de WhatsApp!",
+          headerColor: "#222",
+          buttonImage: "<img src='./img/whatsapp.svg'>",
+          size: "48px",
+          backgroundColor: "#71c8f0",
+          zIndex: "100",
+        });
+      });
+    </script>
+
     <script src="./js/uikit.min.js"></script>
     <script src="./js/uikit-icons.min.js"></script>
-    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/logo.js"></script>
   </body>
 </html>
